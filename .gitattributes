@@ -1,0 +1,7 @@
+# Kabuk betikleri Windows checkout'unda bile LF kalmali
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.pt binary
+*.jpg binary
+*.png binary

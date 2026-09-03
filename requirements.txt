@@ -1,0 +1,13 @@
+# TTO-MAC zorunlu paketler (macOS, Python 3.11)
+# Arayuz
+customtkinter==5.2.2
+pillow>=10.0
+# Goruntu isleme
+opencv-python>=4.8
+numpy>=1.24,<2.0
+# YOLO kasa tespiti (torch macOS'ta MPS ile Apple GPU kullanir)
+ultralytics>=8.2
+torch>=2.2
+torchvision>=0.17
+# Barkod okuma (macOS'ta Aremak yerine acik kaynak zxing)
+zxing-cpp>=2.2

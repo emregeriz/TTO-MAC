@@ -1,0 +1,5 @@
+# Opsiyonel: okunamayan kasanin uzerindeki numaradan seri tespiti (PP-OCRv5).
+# Kurulamazsa uygulama yine calisir, yalniz bu ozellik kapali olur.
+# macOS'ta CUDA yok; CPU derlemesi kullanilir.
+paddlepaddle>=3.0
+paddleocr>=3.0
