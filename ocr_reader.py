@@ -205,6 +205,12 @@ def serial_from_number(number, prefix: str = "64") -> str | None:
     if len(s) == 4 and s[:2] in ("64", "43"):
         return s
     if len(s) == 2:
+        # "64" / "43" kasanin basili numarasi DEGIL, serinin on ekidir; kasa
+        # kosesindeki "6412A" kodundan OCR yalniz "64" yakalayinca buraya
+        # dusup "6464" gibi OLMAYAN bir seri uretiyordu. On eki kasa numarasi
+        # sayma — kanit buysa seri cozulemez (operatore sorulur).
+        if s in ("64", "43"):
+            return None
         return prefix + s
     return None
 
